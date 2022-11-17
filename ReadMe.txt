@@ -7,4 +7,4 @@ You can try to do your own distance calculation just by switching the numbers or
 
 extra note: Alt+251 on the numlock returns "√"
 
-Feel free to comment any issues that you may have found in the code.
+Feel free to comment any issues that you may find in the code.
