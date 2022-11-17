@@ -10,14 +10,7 @@ def NextPrime(num: int):
         temp += 1
     return temp
 
-class twoNumbers:
-    def __init__(self, first: int, second: int) -> None:
-        self.first = first
-        self.second = second
-    def __str__(self) -> str:
-        return f"{self.first}, {self.second}"
-
-def perfectSquare(num):
+def perfectSquare(num) -> list:
     outOfRoot = 1
     prime = 1
 
@@ -27,13 +20,22 @@ def perfectSquare(num):
             outOfRoot *= prime
             num /= prime**2
             prime = 1
-    return twoNumbers(outOfRoot, int(num))
+    return [outOfRoot, int(num)]
 
 class SquareRoot:
     def __init__(self, value) -> None:
-        self.outOfRoot = perfectSquare(value).first
-        self.inRoot = perfectSquare(value).second
+        self.outOfRoot = perfectSquare(value)[0]
+        self.inRoot = perfectSquare(value)[1]
 
+    def __str__(self) -> str:
+        representInRoot = self.inRoot
+        if representInRoot == 1:
+            return f"{self.outOfRoot}"
+        elif self.outOfRoot == 1:
+            return f"√{self.inRoot}"
+        else:
+            return f"{self.outOfRoot}√{self.inRoot}"
+    
     def __repr__(self) -> str:
         representInRoot = self.inRoot
         if representInRoot == 1:
