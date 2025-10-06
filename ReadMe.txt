@@ -5,6 +5,6 @@ On the image, i wanted people to understand 3 dimensional distance calculation t
 You can try to do your own distance calculation just by switching the numbers or do something that has something to do with getting input... your choice.
 
 
-extra note: Alt+251 on the numlock returns "√"
+extra note: Alt+251 on the numpad returns "√"
 
 Feel free to comment any issues that you may find in the code.
